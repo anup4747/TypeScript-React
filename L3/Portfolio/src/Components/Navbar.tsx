@@ -1,17 +1,17 @@
 import { useState } from "react";
 // import logo from "../public/logo.png"
-import logo from "../public/logo2.png"
+import logo from "../public/logo2.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white h-20 shadow-md">
+    <nav className="bg-white h-20 w-full fixed shadow-md z-50 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 text-2xl font-bold ml-7 ">
             <a href="#">
-                <img src={logo} alt=""  className="h-14 filter invert" />
+              <img src={logo} alt="" className="h-14 filter invert" />
             </a>
           </div>
           <div className="hidden md:flex space-x-8 text-xl font-medium">
@@ -60,21 +60,27 @@ function Navbar() {
           </div>
         </div>
         {isOpen && (
-          <div className="md:hidden">
-            <div className="flex flex-col items-center space-y-4 text-xl font-medium">
+          <div className="md:hidden inset-0 z-50 absolute top-20 w-full">
+            {" "}
+            <div className="py-4 transition-transform duration-500 ease-in-out transform flex flex-col items-center space-y-4 text-xl font-medium w-full bg-white">
+              {" "}
               <a href="#home" className="hover:underline">
-                Home
-              </a>
+                {" "}
+                Home{" "}
+              </a>{" "}
               <a href="#about" className="hover:underline">
-                About
-              </a>
+                {" "}
+                About{" "}
+              </a>{" "}
               <a href="#work" className="hover:underline">
-                Work
-              </a>
+                {" "}
+                Work{" "}
+              </a>{" "}
               <a href="#contact" className="hover:underline">
-                Contact
-              </a>
-            </div>
+                {" "}
+                Contact{" "}
+              </a>{" "}
+            </div>{" "}
           </div>
         )}
       </div>

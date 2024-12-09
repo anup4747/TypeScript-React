@@ -1,15 +1,6 @@
-interface Icon {
-  src: string;
-  alt: string;
-}
 
-interface WorkCard {
-  image: string;
-  title: string;
-  year: string;
-  category: string;
-  description: string;
-}
+import { Icon } from "./types";
+import { WorkCard } from "./types";
 
 export const posts = [
   {

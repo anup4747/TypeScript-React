@@ -17,3 +17,16 @@ export interface PostCardProps {
     src: string;
     alt: string;
   }
+  
+  export interface Icon {
+    src: string;
+    alt: string;
+  }
+  
+  export interface WorkCard {
+    image: string;
+    title: string;
+    year: string;
+    category: string;
+    description: string;
+  }
