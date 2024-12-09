@@ -8,6 +8,7 @@ interface WorkCardPropss {
 const WorkCardComponent: React.FC<WorkCardPropss> = ({ work }) => {
   return (
     <div>
+      <a href="/WorkDetails">
       <div className="flex flex-row w-full gap-5 mb-5">
         <img
           loading="lazy"
@@ -34,7 +35,7 @@ const WorkCardComponent: React.FC<WorkCardPropss> = ({ work }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div></a>
       <hr className="w-full border-t-2 border-gray-300 mb-10 mt-10" />
     </div>
   );

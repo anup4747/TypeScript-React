@@ -15,16 +15,16 @@ function Navbar() {
             </a>
           </div>
           <div className="hidden md:flex space-x-8 text-xl font-medium">
-            <a href="#home" className="hover:underline">
+            <a href="/" className="hover:underline">
               Home
             </a>
-            <a href="#about" className="hover:underline">
-              About
-            </a>
-            <a href="#work" className="hover:underline">
+            <a href="/Work" className="hover:underline">
               Work
             </a>
-            <a href="#contact" className="hover:underline">
+            <a href="/About" className="hover:underline">
+              About
+            </a>
+            <a href="/contact" className="hover:underline">
               Contact
             </a>
           </div>
@@ -64,19 +64,19 @@ function Navbar() {
             {" "}
             <div className="py-4 transition-transform duration-500 ease-in-out transform flex flex-col items-center space-y-4 text-xl font-medium w-full bg-white">
               {" "}
-              <a href="#home" className="hover:underline">
+              <a href="/" className="hover:underline">
                 {" "}
                 Home{" "}
               </a>{" "}
-              <a href="#about" className="hover:underline">
-                {" "}
-                About{" "}
-              </a>{" "}
-              <a href="#work" className="hover:underline">
+              <a href="/Work" className="hover:underline">
                 {" "}
                 Work{" "}
               </a>{" "}
-              <a href="#contact" className="hover:underline">
+              <a href="/About" className="hover:underline">
+                {" "}
+                About{" "}
+              </a>{" "}
+              <a href="/Contact" className="hover:underline">
                 {" "}
                 Contact{" "}
               </a>{" "}
