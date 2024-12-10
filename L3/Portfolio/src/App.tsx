@@ -7,7 +7,10 @@ import { Footer } from "./Components/Footer";
 import { About } from "./Pages/About";
 import { Contact } from "./Pages/Contact";
 import { Work } from "./Pages/Work";
-import { WorkDetails } from "./Pages/WorkDetails";
+import { Ecomuors } from "./Pages/Projects/Ecomours";
+import { Project2 } from "./Pages/Projects/project2";
+import { Project3 } from "./Pages/Projects/project3";
+import { Project4 } from "./Pages/Projects/project4";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export const App: React.FC = () => {
@@ -22,7 +25,10 @@ export const App: React.FC = () => {
             <Route path="/Work" element={<Work />} />
             <Route path="/About" element={<About />} />
             <Route path="/Contact" element={<Contact />} />
-            <Route path="/WorkDetails" element={<WorkDetails />} />
+            <Route path="/Ecomuors" element={<Ecomuors />} />
+            <Route path="/project2" element={<Project2 />} />
+            <Route path="/project3" element={<Project3 />} />
+            <Route path="/project4" element={<Project4 />} />
           </Routes>
         </Router>
 

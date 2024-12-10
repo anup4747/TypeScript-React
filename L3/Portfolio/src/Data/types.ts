@@ -11,22 +11,12 @@ export interface PostCardProps {
     year: string;
     category: string;
     description: string;
+    route:string;
   }
   
   export interface SocialIconProps {
     src: string;
     alt: string;
+    link:string;
   }
   
-  export interface Icon {
-    src: string;
-    alt: string;
-  }
-  
-  export interface WorkCard {
-    image: string;
-    title: string;
-    year: string;
-    category: string;
-    description: string;
-  }

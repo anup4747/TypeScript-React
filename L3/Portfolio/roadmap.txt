@@ -1,0 +1,61 @@
+Title
+Project Image
+Project Link
+Brief Description
+Detailed Explanation
+Contact Information (github)
+
+ok lets move to about page lets make a about page so what do you think as fullstarck developer what should be in about page
+Creating an engaging and comprehensive About Page is crucial for showcasing your skills, experience, and personality. As a full-stack developer, here are some elements you should consider including:
+
+1. Professional Photo
+Profile Image: A professional and friendly photo to add a personal touch.
+
+2. Introduction
+Brief Bio: A succinct introduction about who you are, what you do, and your passion for development.
+
+3. Skills and Expertise
+Skillset: List your key skills, both frontend (HTML, CSS, JavaScript, React, etc.) and backend (Node.js, Express, MongoDB, etc.).
+
+Technologies: Mention tools and technologies you excel at (e.g., Git, Docker, AWS).
+
+4. Experience
+Work Experience: Highlight your professional journey, including notable positions, companies, and projects.
+
+Projects: Briefly mention a few standout projects (linking to detailed pages if applicable).
+
+5. Education and Certifications
+Education: Your academic background.
+
+Certifications: Relevant certifications or courses you’ve completed.
+6. Personal Projects and Contributions
+Open Source: Contributions to open-source projects.
+
+Personal Projects: Any personal projects that showcase your creativity and skills.
+
+<section className="skills mt-8">
+          <h2 className="text-2xl font-semibold">Skills</h2>
+          {/* Frontend Skills */}
+          <div className="frontend mt-4">
+            <h3 className="text-xl font-medium">Frontend</h3>
+            <ul className="list-disc ml-5">
+              <li>HTML</li> <li>CSS</li> <li>JavaScript</li> <li>React</li>
+              <li>Redux</li>
+            </ul>
+          </div>
+          {/* Backend Skills */}
+          <div className="backend mt-4">
+            <h3 className="text-xl font-medium">Backend</h3>
+            <ul className="list-disc ml-5">
+              <li>Node.js</li> <li>Express</li> <li>MongoDB</li> <li>SQL</li>
+            </ul>
+          </div>
+          {/* Other Skills */}
+          <div className="other mt-4">
+            <h3 className="text-xl font-medium">Other</h3>
+            <ul className="list-disc ml-5">
+              <li>Git</li> <li>Docker</li> <li>AWS</li> <li>AI/ML</li>
+              <li>Blockchain</li>
+            </ul>
+          </div>
+        </section>
