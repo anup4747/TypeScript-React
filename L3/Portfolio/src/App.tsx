@@ -1,6 +1,5 @@
-// import React, { createContext, useContext, useState, useEffect } from 'react';
-// import './App.css';
-
+import React, { useState, useEffect } from 'react';
+import './App.css';
 import Navbar from "./Components/Navbar";
 import { Home } from "./Pages/Home";
 import { Footer } from "./Components/Footer";
@@ -14,14 +13,21 @@ import { Project4 } from "./Pages/Projects/project4";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { certificates } from './Data/data';
 
+
 export const App: React.FC = () => {
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  }
   
   return (
-    <div className="App">
-      <div className="flex overflow-hidden flex-col bg-white">
+    <div className={`App dark:bg-black ${darkMode && "dark"}`}>
+      <div className="flex overflow-hidden flex-col dark:bg-black dark:text-white">
         <Router>
           {/* Navbar is persistent and rendered above all routes */}
-          <Navbar />
+          <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Work" element={<Work />} />

@@ -18,7 +18,7 @@ export const Contact: React.FC = () => {
         <form onSubmit={handleSubmit} className="mt-8 max-w-md mx-auto">
           <div className="mb-4">
             <label
-              className="block text-gray-700 text-sm font-bold mb-2"
+              className="block dark:text-white text-sm font-bold mb-2"
               htmlFor="name"
             >
               Name
@@ -34,7 +34,7 @@ export const Contact: React.FC = () => {
           </div>
           <div className="mb-4">
             <label
-              className="block text-gray-700 text-sm font-bold mb-2"
+              className="block dark:text-white text-sm font-bold mb-2"
               htmlFor="email"
             >
               Email
@@ -50,7 +50,7 @@ export const Contact: React.FC = () => {
           </div>
           <div className="mb-4">
             <label
-              className="block text-gray-700 text-sm font-bold mb-2"
+              className="block dark:text-white text-sm font-bold mb-2"
               htmlFor="message"
             >
               Message
@@ -67,7 +67,7 @@ export const Contact: React.FC = () => {
           <div className="flex items-center justify-between">
             <button
               type="submit"
-              className="mt-6 self-center flex items-center justify-center px-4 py-3 text-xl font-medium text-white bg-red-400 rounded-lg shadow-lg max-md:px-4 max-md:py-3 max-md:text-lg hover:bg-red-500 transition duration-200"
+              className="mt-6 self-center flex items-center justify-center px-4 py-3 text-xl font-medium  dark:text-black shadow-2xl dark:shadow-white  dark:bg-slate-200 dark:hover:bg-slate-300 text-white bg-red-400 rounded-lg max-md:px-4 max-md:py-3 max-md:text-lg hover:bg-red-500 transition duration-200"
             >
               Send Message
             </button>

@@ -20,11 +20,11 @@ export const About: React.FC<CertificateProps> = ({ certificates }) =>{
         <button
           onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/1s-EOPhu7htYzfye5-RMnPizSNnf4C9jI/view?usp=drive_link",
+              "https://drive.google.com/file/d/1dw81pBfKg7NJP_ejzjDQfwvdTm07-Uc_/view?usp=drive_link",
               "_blank"
             )
           }
-          className="mt-11 self-center flex items-center justify-center px-5 py-4 text-xl font-medium text-white bg-red-400 rounded-lg shadow-lg max-md:px-4 max-md:py-3 max-md:text-lg hover:bg-red-500 transition duration-200"
+          className="mt-11 self-center flex items-center justify-center px-5 py-4 text-xl dark:text-black shadow-2xl dark:shadow-white  dark:bg-slate-200 dark:hover:bg-slate-300 font-medium text-white bg-red-400 rounded-lg max-md:px-4 max-md:py-3 max-md:text-lg hover:bg-red-500 transition duration-200"
         >
           Download Resume
         </button>
