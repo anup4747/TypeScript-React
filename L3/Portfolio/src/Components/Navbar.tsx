@@ -4,6 +4,7 @@ import logo from "../public/logo2.png";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 
 interface NavbarProps {
   darkMode: boolean;
@@ -23,34 +24,34 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
             </a>
           </div>
           <div className="hidden md:flex space-x-8 text-xl font-medium">
-            <a href="/" className="hover:underline">
+            <Link to="/" className="hover:underline">
               Home
-            </a>
-            <a href="/Work" className="hover:underline">
+            </Link>
+            <Link to="/Work" className="hover:underline">
               Work
-            </a>
-            <a href="/About" className="hover:underline">
+            </Link>
+            <Link to="/About" className="hover:underline">
               About
-            </a>
-            <a href="/contact" className="hover:underline">
+            </Link>
+            <Link to="/contact" className="hover:underline">
               Contact
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <div className="flex items-center">
-                {" "}
+                
                 <button
                   onClick={toggleDarkMode}
                   className="text-gray-900 dark:text-white focus:outline-none"
                 >
-                  {" "}
+                  
                   <FontAwesomeIcon
                     icon={darkMode ? faSun : faMoon}
                     size="lg"
                     className=""
-                  />{" "}
-                </button>{" "}
+                  />
+                </button>
               </div>
-            </a>
+            </Link>
           </div>
 
           <div className="md:hidden">
