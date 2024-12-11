@@ -27,7 +27,7 @@ export const works: WorkCardProps[] = [
     category: "Dashboard",
     description:
       "This project involved creating intuitive and visually appealing dashboards. The goal was to provide users with a seamless experience, enabling them to quickly access and analyze data. The design focused on clean layouts, effective data visualization, and user-friendly navigation.",
-    route: "Ecomuors",
+    route: "/Ecomuors",
   },
   {
     image:
@@ -37,7 +37,7 @@ export const works: WorkCardProps[] = [
     category: "Illustration",
     description:
       "Vibrant Portraits of 2020 is a collection of dynamic and colorful illustrations that capture the essence of that year. Each portrait is designed to evoke emotions and tell a story through bold colors and intricate details.",
-    route: "project2",
+    route: "/project2",
   },
   {
     image:
@@ -47,7 +47,7 @@ export const works: WorkCardProps[] = [
     category: "Typography",
     description:
       "This project celebrates the beauty of Malayalam typography. Over 36 days, unique and creative type designs were crafted, showcasing the versatility and richness of the Malayalam script. The work highlights both traditional and contemporary styles, aiming to inspire and promote cultural appreciation.",
-    route: "project3",
+    route: "/project3",
   },
   {
     image:
@@ -57,7 +57,7 @@ export const works: WorkCardProps[] = [
     category: "Typography",
     description:
       "This project celebrates the beauty of Malayalam typography. Over 36 days, unique and creative type designs were crafted, showcasing the versatility and richness of the Malayalam script. The work highlights both traditional and contemporary styles, aiming to inspire and promote cultural appreciation.",
-    route: "project4",
+    route: "/project4",
   },
 ];
 export const socialIcons: SocialIconProps[] = [
