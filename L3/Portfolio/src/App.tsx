@@ -1,4 +1,4 @@
-import React from "react";
+// import React, { createContext, useContext, useState, useEffect } from 'react';
 // import './App.css';
 
 import Navbar from "./Components/Navbar";
@@ -12,8 +12,10 @@ import { Project2 } from "./Pages/Projects/project2";
 import { Project3 } from "./Pages/Projects/project3";
 import { Project4 } from "./Pages/Projects/project4";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { certificates } from './Data/data';
 
 export const App: React.FC = () => {
+  
   return (
     <div className="App">
       <div className="flex overflow-hidden flex-col bg-white">
@@ -23,7 +25,7 @@ export const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Work" element={<Work />} />
-            <Route path="/About" element={<About />} />
+            <Route path="/About" element={<About certificates={certificates} />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/Ecomuors" element={<Ecomuors />} />
             <Route path="/project2" element={<Project2 />} />

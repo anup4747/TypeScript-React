@@ -1,6 +1,7 @@
 import { useState } from "react";
 // import logo from "../public/logo.png"
 import logo from "../public/logo2.png";
+import React from "react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +14,7 @@ function Navbar() {
             <a href="/">
               <img src={logo} alt="" className="h-14 filter invert" />
             </a>
+           
           </div>
           <div className="hidden md:flex space-x-8 text-xl font-medium">
             <a href="/" className="hover:underline">

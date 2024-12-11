@@ -1,5 +1,6 @@
 import { SocialIconProps } from "./types";
 import { WorkCardProps } from "./types";
+import { Certificate } from "./types";
 
 export const posts = [
   {
@@ -68,8 +69,7 @@ export const socialIcons: SocialIconProps[] = [
   {
     src: "https://cdn.builder.io/api/v1/image/assets/TEMP/a5a4bab6ee0b091fffa43f065bea63ed0f8f43a5ae07dd00079de42fe058d4a4?placeholderIfAbsent=true&apiKey=802d917660ae4455b4ba5187ede45b83",
     alt: "Instagram",
-    link:"https://www.instagram.com/anups.d.t127/"
-    
+    link: "https://www.instagram.com/anups.d.t127/",
   },
   {
     src: "https://cdn.builder.io/api/v1/image/assets/TEMP/c65b17ffe1d5d4ff1a341fa08b93867bc6b5f3d81dc031800fa602a3ca99375f?placeholderIfAbsent=true&apiKey=802d917660ae4455b4ba5187ede45b83",
@@ -79,9 +79,19 @@ export const socialIcons: SocialIconProps[] = [
   {
     src: "https://cdn.builder.io/api/v1/image/assets/TEMP/d101d20b1c5d5e2ce5dee28df7059a13d11a6bc10ee851284fa393c667620e6c?placeholderIfAbsent=true&apiKey=802d917660ae4455b4ba5187ede45b83",
     alt: "LinkedIn",
-    link: "https://www.linkedin.com/in/anup-tarwade-2218962b2/"
+    link: "https://www.linkedin.com/in/anup-tarwade-2218962b2/",
   },
 ];
+
+export const certificates: Certificate[] = [
+  {
+    id: 1,
+    title: "Web Development",
+    img: "https://i.pinimg.com/736x/eb/fa/cf/ebfacfc130f320be26e8f8ef20c2216f.jpg",
+  },
+  { id: 2, title: "Legrand Internship", img: "https://i.pinimg.com/736x/40/b9/61/40b961db37ff45d5a3cca192a6ca542e.jpg" },
+
+]; // Add more certificates as needed ];
 
 export interface iconProps {
   icons: SocialIconProps[];
@@ -89,4 +99,8 @@ export interface iconProps {
 
 export interface WorkProps {
   works: WorkCardProps[];
+}
+
+export interface CertificateProps{
+  certificates: Certificate[];
 }
