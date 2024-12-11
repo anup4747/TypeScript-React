@@ -23,7 +23,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 dark:text-white">
           <div className="flex-shrink-0 text-2xl font-bold ml-7 ">
-            <Link to="/">
+            <Link to="/"    onClick={() => setIsOpen(!isOpen)} > 
               <img
                 src={logo}
                 alt=""
