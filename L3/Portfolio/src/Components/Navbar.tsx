@@ -94,19 +94,19 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
         {isOpen && (
           <div className="md:hidden inset-0 z-50 absolute top-20 w-full dark:text-white dark:bg-black">
             <div className="py-4 ease-in-out transform flex flex-col items-center space-y-4 text-xl font-medium w-full dark:bg-black navbarlight">
-              <Link to="/" className=" hover:underline">
+              <Link onClick={() => setIsOpen(!isOpen)} to="/" className=" hover:underline">
                 Home
               </Link>
-              <Link to="/Work" className="hover:underline">
+              <Link onClick={() => setIsOpen(!isOpen)}  to="/Work" className="hover:underline">
                 Work
               </Link>
-              <Link to="/About" className="hover:underline">
+              <Link onClick={() => setIsOpen(!isOpen)} to="/About" className="hover:underline">
                 About
               </Link>
-              <Link to="/Contact" className="hover:underline">
+              <Link onClick={() => setIsOpen(!isOpen)} to="/Contact" className="hover:underline">
                 Contact
               </Link>
-              <Link to="#" className="hover:underline">
+              <Link onClick={() => setIsOpen(!isOpen)} to="#" className="hover:underline">
               <button
                   onClick={toggleDarkMode}
                   className="text-gray-900 dark:text-white focus:outline-none"
