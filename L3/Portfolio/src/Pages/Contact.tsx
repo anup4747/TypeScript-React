@@ -12,7 +12,7 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col self-center mt-40 w-full max-w-[855px] max-md:mt-10 max-md:pt-14 max-md:max-w-full px-4">
+    <div className="flex flex-col self-center mt-40 w-full max-w-[855px] max-md:mt-10 max-md:pt-14 max-md:max-w-full px-4 mb-20">
       <div className="contact-page">
         <h1 className="text-3xl font-bold text-center">Contact Me</h1>
         <form onSubmit={handleSubmit} className="mt-8 max-w-md mx-auto">
