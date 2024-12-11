@@ -1,5 +1,6 @@
 import React from "react";
 import { WorkCardProps } from "../Data/types"; // Adjust the import path as necessary
+import { Link } from "react-router-dom";
 
 interface WorkCardPropss {
   work: WorkCardProps;
@@ -8,7 +9,7 @@ interface WorkCardPropss {
 const WorkCardComponent: React.FC<WorkCardPropss> = ({ work }) => {
   return (
     <div>
-      <a href="/work">
+      <Link to="/work">
         <div className="flex shadow-xl dark:shadow-white rounded-lg flex-col p-3 max-md:flex-row w-full max-md:w-full gap-5 mb-0 ">
           <img
             loading="lazy"
@@ -36,7 +37,7 @@ const WorkCardComponent: React.FC<WorkCardPropss> = ({ work }) => {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };
