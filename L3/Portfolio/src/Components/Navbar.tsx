@@ -23,13 +23,13 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 dark:text-white">
           <div className="flex-shrink-0 text-2xl font-bold ml-7 ">
-            <a href="/">
+            <Link to="/">
               <img
                 src={logo}
                 alt=""
                 className="h-14 filter inverting dark:invert-0 "
               />
-            </a>
+            </Link>
           </div>
           <div className="hidden md:flex space-x-8 text-xl font-medium">
             <Link to="/" className="hover:underline">
