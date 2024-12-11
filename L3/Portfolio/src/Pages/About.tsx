@@ -6,7 +6,7 @@ import CertificateGallery from "../Components/CertificateGallery";
 export const About: React.FC<CertificateProps> = ({ certificates }) =>{
  
   return (
-    <div className="flex flex-col self-center mt-40 w-full max-w-[855px] max-md:mt-10 max-md:pt-14 max-md:max-w-full px-4">
+    <div className="flex flex-col self-center mt-40 w-full max-w-[855px] max-md:mt-24 max-md:pt-14 max-md:max-w-full px-4">
       <h1 className="text-3xl font-bold text-center">About Me</h1>
       <div className="about-page flex flex-col self-center">
         <p className="mt-14 max-w-3xl text-center sm:text-left">
