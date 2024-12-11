@@ -1,6 +1,5 @@
 import { PostCard } from "../Components/PostCard";
 import WorkCardComponent from "../Components/WorkCard";
-import WorkPageCardComponent from "../Components/WorkPageCard";
 // import { SocialIcons } from "../Components/SocialIcons";
 import { posts, works } from "../Data/data";
 import React from "react";
