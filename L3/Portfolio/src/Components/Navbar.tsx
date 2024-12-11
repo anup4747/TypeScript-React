@@ -4,7 +4,7 @@ import logo from "../public/logo2.png";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 interface NavbarProps {
   darkMode: boolean;
@@ -15,12 +15,20 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className={`h-20 w-full fixed  z-50 ${darkMode ? 'shadow-white' : 'shadow-black'} dark:bg-black navbarlight`}>
+    <nav
+      className={`h-20 w-full fixed  z-50 ${
+        darkMode ? "shadow-white" : "shadow-black"
+      } dark:bg-black navbarlight`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 dark:text-white">
           <div className="flex-shrink-0 text-2xl font-bold ml-7 ">
             <a href="/">
-              <img src={logo} alt="" className="h-14 filter inverting dark:invert-0 " />
+              <img
+                src={logo}
+                alt=""
+                className="h-14 filter inverting dark:invert-0 "
+              />
             </a>
           </div>
           <div className="hidden md:flex space-x-8 text-xl font-medium">
@@ -38,12 +46,10 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
             </Link>
             <Link to="#">
               <div className="flex items-center">
-                
                 <button
                   onClick={toggleDarkMode}
                   className="text-gray-900 dark:text-white focus:outline-none"
                 >
-                  
                   <FontAwesomeIcon
                     icon={darkMode ? faSun : faMoon}
                     size="lg"
@@ -87,26 +93,33 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
         </div>
         {isOpen && (
           <div className="md:hidden inset-0 z-50 absolute top-20 w-full dark:text-white dark:bg-black">
-            {" "}
             <div className="py-4 ease-in-out transform flex flex-col items-center space-y-4 text-xl font-medium w-full dark:bg-black navbarlight">
-              {" "}
-              <a href="/" className=" hover:underline">
-                {" "}
-                Home{" "}
-              </a>{" "}
-              <a href="/Work" className="hover:underline">
-                {" "}
-                Work{" "}
-              </a>{" "}
-              <a href="/About" className="hover:underline">
-                {" "}
-                About{" "}
-              </a>{" "}
-              <a href="/Contact" className="hover:underline">
-                {" "}
-                Contact{" "}
-              </a>{" "}
-            </div>{" "}
+              <Link to="/" className=" hover:underline">
+                Home
+              </Link>
+              <Link to="/Work" className="hover:underline">
+                Work
+              </Link>
+              <Link to="/About" className="hover:underline">
+                About
+              </Link>
+              <Link to="/Contact" className="hover:underline">
+                Contact
+              </Link>
+              <Link to="#" className="hover:underline">
+              <button
+                  onClick={toggleDarkMode}
+                  className="text-gray-900 dark:text-white focus:outline-none"
+                >
+                  
+                  <FontAwesomeIcon
+                    icon={darkMode ? faSun : faMoon}
+                    size="lg"
+                    className=""
+                  />
+                </button>
+              </Link>
+            </div>
           </div>
         )}
       </div>
