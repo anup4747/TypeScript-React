@@ -8,7 +8,7 @@ export const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission logic here
-    const response = await fetch("http://localhost:3000/api/contact", {
+    const response = await fetch("https://type-script-react-three.vercel.app/contact/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, message }),
