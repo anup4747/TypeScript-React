@@ -5,9 +5,19 @@ export const Contact: React.FC = () => {
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission logic here
+    const response = await fetch("http://localhost:3000/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, message }),
+    });
+    if (response.ok) {
+      console.log("Form submitted successfully");
+    } else {
+      console.error("Form submission failed");
+    }
     console.log("Form submitted", { name, email, message });
   };
 

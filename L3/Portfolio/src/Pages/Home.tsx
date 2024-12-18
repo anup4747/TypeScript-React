@@ -31,7 +31,7 @@ export const Home: React.FC = () => {
             >
               <img
                 src="https://i.pinimg.com/736x/e5/19/45/e519453566d01b8cccbb772ef5b5e40b.jpg"
-                alt="Profile picture"
+                alt="Profile"
                 className="object-cover w-full h-full transform scale-110 shadow-2xl shadow-black dark:shadow-white"
               />
             </div>
